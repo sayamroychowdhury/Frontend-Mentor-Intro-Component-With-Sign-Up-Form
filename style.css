@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("bg-intro-desktop.png");
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10rem;
+    /* outline: 2px solid black; */
+}
+
+.text, .form{
+    width: 50%;
+    /* outline: 2px solid black; */
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.form{
+    padding: 1rem;
+}
+
+.text div:first-child{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.text div:nth-child(2){
+    font-size: 0.75rem;
+    margin-top: 1.3rem;
+}
+
+.trialText{
+    /* outline: 2px solid black; */
+    border-radius: 0.3rem;
+    background-color: hsl(248, 32%, 49%);
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.formReal{
+    background-color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    width: 100%;
+}
+
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 0.75rem;
+}
+
+input[type = submit]{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+}
+
+.termS{
+    font-size: 0.65rem;
+    margin-top: 0.75rem;
+    color: hsl(246, 25%, 77%);
+}
+
+@media (max-width: 425px){
+
+    body{
+        background-image: url("bg-intro-mobile.png");
+    }
+    
+    main{
+        align-items: flex-start;
+    }
+
+    section{
+        /* outline: 2px solid black; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        padding: 3rem;
+        /* margin: 2.5rem; */
+    }
+
+    .text, .form{
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .form{
+        margin-top: 2rem;
+    }
+}
