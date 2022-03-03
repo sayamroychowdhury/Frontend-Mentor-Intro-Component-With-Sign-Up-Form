@@ -26,21 +26,36 @@
         <div class="form">
             
             <div class="trialText">
-                Try it free 7 days then $20/mo. thereafter
+                <span>Try it free 7 days&nbsp;</span> then $20/mo. thereafter
             </div>
 
             <div class="formReal">
-                <form>
+                <form id = "details">
                     
-                    <input type = "text" id = "fname" name = "fname" placeholder = "First Name" required>
-                    <input type = "text" id = "fname" name = "fname" placeholder = "Last Name">
-                    <input type = "text" id = "fname" name = "fname" placeholder = "Email Address">
-                    <input type = "text" id = "fname" name = "fname" placeholder = "Password">
+                    <div class="field">
+                        <input type = "text" id = "fname" name = "fname" placeholder = "First Name">
+                        <small></small>
+                    </div>
 
-                    <input type = "submit" value="CLAIM YOUR FREE TRIAL">
+                    <div class="field">
+                        <input type = "text" id = "lname" name = "lname" placeholder = "Last Name">
+                        <small></small>
+                    </div>
+
+                    <div class="field">
+                        <input type = "text" id = "email" name = "email" placeholder = "Email Address">
+                        <small></small>
+                    </div>
+
+                    <div class="field">
+                        <input type = "text" id = "password" name = "password" placeholder = "Password">
+                        <small></small>
+                    </div>
+
+                    <input type = "submit" id = "mySubmit" value="CLAIM YOUR FREE TRIAL">
                 </form>
             <div class="termS">
-                By clicking the button, you are agreeing to our Terms and Services
+                By clicking the button, you are agreeing to our <span>Terms and Services</span>
             </div>
 
             </div>
@@ -50,5 +65,6 @@
         </section>
     </main>
 
+    <script src="script.js"></script>
     </body>
 </html>
