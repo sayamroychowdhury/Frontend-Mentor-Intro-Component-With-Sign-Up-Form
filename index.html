@@ -30,30 +30,32 @@
             </div>
 
             <div class="formReal">
-                <form id = "details">
+                <form action = "/myaction.php" name = "myForm" onsubmit="return validateForm()" method = "post">
                     
-                    <div class="field">
-                        <input type = "text" id = "fname" name = "fname" placeholder = "First Name">
-                        <small></small>
+                    <div class="field" id = "firstName">
+                        <input type = "text" name = "fname" placeholder = "First Name">
+                        <i><small class = "formError"></small></i>
                     </div>
 
-                    <div class="field">
-                        <input type = "text" id = "lname" name = "lname" placeholder = "Last Name">
-                        <small></small>
+                    <div class="field" id = "lastName">
+                        <input type = "text" name = "lname" placeholder = "Last Name">
+                        <i><small class = "formError"></small></i>
                     </div>
 
-                    <div class="field">
-                        <input type = "text" id = "email" name = "email" placeholder = "Email Address">
-                        <small></small>
+                    <div class="field" id = "email">
+                        <input type = "email" name = "email" placeholder = "Email Address">
+                        <i><small class = "formError"></small></i>
                     </div>
 
-                    <div class="field">
-                        <input type = "text" id = "password" name = "password" placeholder = "Password">
-                        <small></small>
+                    <div class="field" id = "password">
+                        <input type = "password" name = "pass" placeholder = "Password">
+                        <i><small class = "formError"></small></i>
                     </div>
 
                     <input type = "submit" id = "mySubmit" value="CLAIM YOUR FREE TRIAL">
+
                 </form>
+
             <div class="termS">
                 By clicking the button, you are agreeing to our <span>Terms and Services</span>
             </div>

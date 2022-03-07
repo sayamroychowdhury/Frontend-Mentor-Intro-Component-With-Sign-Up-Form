@@ -76,14 +76,9 @@ section{
     background-color: white;
     padding: 2rem;
     margin-top: 1.5rem;
-    text-align: center;
     border-radius: 0.5rem;
     width: 100%;
     box-shadow: 0 6px rgba(0,0,0,0.15);
-}
-
-.field input{
-    width: 100%;
 }
 
 .form form{
@@ -92,16 +87,17 @@ section{
 }
 
 input{
+    width: 100%;
     margin-top: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    padding: 0.85rem;
-    border: 0.1px solid hsl(246, 25%, 77%);
+    padding: 0.85rem 0.85rem 0.85rem 1.5rem;
+    border: 0.1px solid rgba(177,172,220,0.3);
     border-radius: 0.3rem;
-    font-size: 0.75rem;
+    font-size: 0.70rem;
 }
 
-#fname{
+.field#firstName input{
     margin-top: 0.5rem;
 }
 
@@ -117,12 +113,26 @@ input[type = submit]{
     font-size: 0.5rem;
     margin-top: 0.75rem;
     color: hsl(246, 25%, 77%);
+    text-align: center;
+    width: 100%;
 }
 
 .termS span{
     font-weight: 700;
     color: hsl(0, 100%, 74%);
 }
+
+.formError{
+    display: block;
+    color: hsl(0, 100%, 74%);
+    font-size: 0.55rem;
+    width: 100%;
+    text-align: right;
+    /* outline: 2px solid black; */
+    margin-top: 0.35rem;
+    font-weight: 600;
+}
+
 @media (max-width: 425px){
 
     body{
